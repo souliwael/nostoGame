@@ -11,6 +11,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Vector;
 
+import com.nosto.fun.wael.ComputerOpponent;
 /**
  *
  * Quick hackety hack game for 5-in-a-row game. 95% Netbeans Matisse generated code for basic game layout.
@@ -30,8 +31,8 @@ public class MainJFrame extends javax.swing.JFrame {
         //  Add your algorithms here!
         //---------------------------------------------
         algorithms.addElement(new RandomOpponent("LotteryJohnny"));     
-        algorithms.addElement(new RandomOpponent("LuckyJack"));  
-        
+        algorithms.addElement(new RandomOpponent("LuckyJack"));
+        algorithms.addElement(new ComputerOpponent("Wael"));
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(algorithms));
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(algorithms));        
